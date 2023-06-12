@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+header {
+  /* position: absolute; */
+  position: relative;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  /* position: absolute; */
+  position: relative;
+  width: 473px;
+  height: 47px;
+  left: 266px;
+  top: 13px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.blockHero {
+  position: relative;
+
+  /* border: 1px solid red; */
+  width: 944px;
+  top: 0px;
+  /* height: 118px;
+  left: 266px; */
+}
+
+.btnGit {
+  position: absolute;
+  width: 193px;
+  height: 41px;
+  /* left: 0px; */
+  top: 0px;
+  right: 0;
+  background: #ce0033;
+  border-radius: 5px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+h2 {
+  /* position: absolute; */
+  /* position: absolute; */
+  width: 322px;
+  height: 38px;
+  left: 266px;
+  top: 122px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+
+#div1,
+#div2,
+#div3 {
+  position: relative;
+}
+
+h3 {
+  position: absolute;
+  margin: 19px 0 5px 15px;
+}
+
+ol {
+  position: absolute;
+  margin: 70px 10px 10px;
+}
+
+li {
+  list-style-image: url(../images/bullet.png);
+  margin: 10px 20px;
+}
+.div {
+  width: 943px;
+  height: 64px;
+  background: #ffffff;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+#flex {
+  position: relative;
+  /* border: 1px solid red; */
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#flex div {
+  /* border: 1px solid red; */
+  margin: 2% 0;
+}
+#grace {
+  position: relative;
+  padding-top: 50px;
+  right: 125px;
+}
+
+.white {
+  opacity: 0;
+}
+
+#javascript {
+  /* position: absolute; */
+  width: 943px;
+  height: 192px;
+  left: 266px;
+  top: 878px;
+  background-color: #e4e4e4;
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+#javascript p {
+  margin-left: 20px;
+}
+
+#div1 {
+  overflow: hidden;
+}
+
+#div3 p {
+  position: relative;
+  top: 50px;
+  left: 15px;
+}
+
+#instruction {
+  position: relative;
+  width: 472px;
+  height: 57px;
+  top: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+#mon-bouton {
+  /* position: absolute; */
+  width: 193px;
+  height: 41px;
+  left: 641px;
+  top: 1000px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background: #ce0033;
+  border-radius: 5px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    background-color: rgb(181, 181, 229);
+    width: 390px;
+  }
+
+  header {
+    position: relative;
+    width: 386px;
+    height: 52px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  header h1 {
+    /* position: relative; */
+    display: flex;
+    width: 273px;
+    height: 47px;
+    left: 23px;
+    top: 3px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 47px;
+    color: #000000;
+    justify-content: center;
+  }
+
+  .blockHero {
+    /* position: absolute; */
+    /* border: 3px solid red; */
+    width: 322px;
+    height: 234px;
+    /* left: 28px; */
+    top: 0px;
+  }
+
+  .btnGit {
+    width: 193px;
+    height: 41px;
+    left: 60px;
+    top: 200px;
+    right: 0;
+    font-size: 17px;
+  }
+
+  h2 {
+    width: 322px;
+    height: 38px;
+    left: 28px;
+    top: 102px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+  }
+  #instruction {
+    width: 340px;
+    font-size: 14px;
+    margin: 0px 10px;
+  }
+  #flex {
+    position: relative;
+    width: 370px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #flex div {
+    /* border: 1px solid red; */
+    width: 356px;
+    margin: 2% 0;
+  }
+
+  #grace {
+    position: static;
+    /* border: 1px solid red; */
+    width: 350px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* right: 25px; */
+  }
+
+  #javascript {
+    /* position: absolute; */
+    /* margin-top: 200px; */
+    width: 943px;
+    height: 209px;
+    left: 266px;
+    top: 878px;
+  }
+
+  #javascript p {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  #mon-bouton {
+    display: flex;
+    width: 193px;
+    height: 41px;
+    left: 90px;
+    top: 900px;
+  }
+}
