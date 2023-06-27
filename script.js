@@ -4,6 +4,7 @@ const div3 = document.querySelector("#div3");
 const largeurEcran = window.innerWidth;
 const hauteurEcran = window.innerHeight;
 let pjavascript = document.querySelector("#pjavascript");
+console.log(largeurEcran);
 
 const names = [
   "Samir",

@@ -7,6 +7,7 @@ const div3 = document.getElementById("div3");
 const largeurEcran = window.innerWidth;
 const hauteurEcran = window.innerHeight;
 let pjavascript = document.querySelector("#pjavascript");
+console.log(largeurEcran);
 
 const names = [
   "Samir",
@@ -67,33 +68,174 @@ if (button.textContent === "Samir") {
   }, 1300);
 }
 // -------------------------------------------div visible--------------------------------------------------
-
-div1.addEventListener("click", () => {
-  isVisibleDiv1 = !isVisibleDiv1;
-  console.log(isVisibleDiv1);
-  if (isVisibleDiv1) {
-    div1.style.height = "230px";
-  } else {
-    div1.style.height = "64px";
-  }
-});
-div2.addEventListener("click", () => {
-  isVisibleDiv2 = !isVisibleDiv2;
-  console.log(isVisibleDiv2);
-  if (isVisibleDiv2) {
-    div2.style.height = "280px";
-  } else {
-    div2.style.height = "64px";
-  }
-});
-div3.addEventListener("click", () => {
-  isVisibleDiv3 = !isVisibleDiv3;
-  console.log(isVisibleDiv3);
-  if (isVisibleDiv3) {
-    div3.style.height = "120px";
-  } else {
-    div3.style.height = "64px";
-  }
-});
+if (largeurEcran > 320 && largeurEcran < 390) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "330px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "640px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "180px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+  // } else if (largeurEcran <= 390) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "280px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "570px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "150px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+} else if (largeurEcran >= 390 && largeurEcran < 550) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "250px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "430px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "160px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+} else if (largeurEcran >= 550 && largeurEcran < 750) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "230px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "330px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "160px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+} else if (largeurEcran >= 750 && largeurEcran < 1000) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "230px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "330px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "140px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+} else if (largeurEcran >= 1000) {
+  div1.addEventListener("click", () => {
+    isVisibleDiv1 = !isVisibleDiv1;
+    console.log(isVisibleDiv1);
+    if (isVisibleDiv1) {
+      div1.style.height = "230px";
+    } else {
+      div1.style.height = "64px";
+    }
+  });
+  div2.addEventListener("click", () => {
+    isVisibleDiv2 = !isVisibleDiv2;
+    console.log(isVisibleDiv2);
+    if (isVisibleDiv2) {
+      div2.style.height = "280px";
+    } else {
+      div2.style.height = "64px";
+    }
+  });
+  div3.addEventListener("click", () => {
+    isVisibleDiv3 = !isVisibleDiv3;
+    console.log(isVisibleDiv3);
+    if (isVisibleDiv3) {
+      div3.style.height = "120px";
+    } else {
+      div3.style.height = "64px";
+    }
+  });
+}
 
 // -----------------------------------------------------------------------------------------

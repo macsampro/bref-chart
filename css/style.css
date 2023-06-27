@@ -2,15 +2,18 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid red; */
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   /* position: absolute; */
-  position: relative;
+  /* position: relative; */
+  position: fixed;
+  z-index: 2;
   width: 100%;
-  height: 72px;
-  left: 0px;
-  top: 0px;
+  height: 5rem;
+  left: 0;
+  top: 0;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -22,7 +25,6 @@ header h1 {
   height: 47px;
   left: 266px;
   top: 13px;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -42,6 +44,9 @@ header h1 {
 
 .btnGit {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 193px;
   height: 41px;
   /* left: 0px; */
@@ -129,7 +134,7 @@ li {
 #grace {
   position: relative;
   padding-top: 50px;
-  right: 125px;
+  right: 5.5rem;
 }
 
 .white {
@@ -198,118 +203,314 @@ li {
   color: #ffffff;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 1rem;
+  }
   body {
-    background-color: rgb(181, 181, 229);
-    width: 390px;
+    /* background-color: rgb(223, 172, 172); */
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
-
-  header {
-    position: relative;
-    width: 386px;
-    height: 52px;
-    background: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  }
-
-  header h1 {
-    /* position: relative; */
-    display: flex;
-    width: 273px;
-    height: 47px;
-    left: 23px;
-    top: 3px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 47px;
-    color: #000000;
-    justify-content: center;
-  }
-
-  .blockHero {
-    /* position: absolute; */
-    /* border: 3px solid red; */
-    width: 322px;
-    height: 234px;
-    /* left: 28px; */
-    top: 0px;
-  }
-
-  .btnGit {
-    width: 193px;
-    height: 41px;
-    left: 60px;
-    top: 200px;
-    right: 0;
-    font-size: 17px;
-  }
-
   h2 {
-    width: 322px;
-    height: 38px;
-    left: 28px;
-    top: 102px;
+    position: relative;
 
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-
-    color: #000000;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
+    top: 0;
+    left: 5rem;
+  }
+  .btnGit {
+    right: 5rem;
+  }
+  .div {
+    /* width: 8rem; */
+    width: 50rem;
   }
   #instruction {
-    width: 340px;
-    font-size: 14px;
-    margin: 0px 10px;
+    right: -5rem;
   }
-  #flex {
-    position: relative;
-    width: 370px;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #flex div {
-    /* border: 1px solid red; */
-    width: 356px;
-    margin: 2% 0;
-  }
-
-  #grace {
-    position: static;
-    /* border: 1px solid red; */
-    width: 350px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    /* right: 25px; */
-  }
-
   #javascript {
+    width: 50rem;
+  }
+  #grace {
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    /* background-color: rgb(175, 133, 133); */
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  /* header {
+    text-align: center;
+    margin-right: 20rem;
+    right: 20rem;
+  } */
+  h2 {
+    /* position: relative; */
+    display: inline;
+    font-size: 4.7rem;
+    top: 3rem;
+  }
+  #instruction {
+    /* display: inline; */
+    /* border: 1px solid black; */
+    width: 95vh;
+    /* height: 5rem; */
+    font-size: 1.5rem;
+    letter-spacing: 0.005rem;
+    line-height: 1.5rem;
+    padding-bottom: 7rem;
+  }
+  .btnGit {
     /* position: absolute; */
-    /* margin-top: 200px; */
-    width: 943px;
-    height: 209px;
-    left: 266px;
-    top: 878px;
+    position: relative;
+    left: 23rem;
+    top: 10rem;
+    /* bottom: 0; */
+    color: Black;
   }
-
-  #javascript p {
-    margin-top: 15px;
-    margin-left: 30px;
-  }
-
-  #mon-bouton {
+  #div1,
+  #div2,
+  #div3,
+  h3 {
     display: flex;
-    width: 193px;
-    height: 41px;
-    left: 90px;
-    top: 900px;
+    /* text-align: center; */
+    justify-content: space-around;
+    margin-bottom: 10rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    /* text-align: center; */
+    display: inline;
+  }
+  #div3 p {
+    /* padding-bottom: 3rem; */
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+  }
+  /* #grace {
+    font-size: 1.1rem;
+  } */
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    /* background-color: red; */
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 45rem;
+  }
+  #instruction {
+    width: 45rem;
+    font-size: 1.4rem;
+    /* border: 1px solid red; */
+    margin-left: 2rem;
+  }
+  #grace {
+    text-align: center;
+    width: 40rem;
+    margin-left: 2rem;
+    /* border: 3px solid black; */
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    /* background-color: rgb(213, 163, 163); */
+  }
+  header H1 {
+    left: 10rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+    left: 10rem;
+  }
+  #instruction {
+    /* border: 3px solid black; */
+    margin-top: 1rem;
+  }
+  .btnGit {
+    top: 12rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    /* background-color: rgb(155, 118, 118); */
+  }
+  #instruction {
+    left: 7rem;
+    text-align: center;
+    width: 40rem;
+    margin-left: 2rem;
+    /* border: 3px solid black; */
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  header h1 {
+    left: 6rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    /* background-color: rgb(224, 189, 189); */
+    overflow-y: scroll;
+  }
+  header h1 {
+    left: 5rem;
+  }
+  h2 {
+    left: 12rem;
+  }
+  #instruction {
+    width: 30rem;
+    left: 12rem;
+    /* border: 3px solid black; */
+    height: 7rem;
+  }
+  .btnGit {
+    top: 15rem;
+  }
+  #grace {
+    width: 30rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  body {
+    /* background-color: rgb(187, 161, 161); */
+  }
+  header h1 {
+    left: 2.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    left: 15rem;
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    /* background-color: rgb(200, 177, 177); */
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+    left: 18rem;
+  }
+  #instruction {
+    width: 20rem;
+    left: 17rem;
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 27rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    /* background-color: rgb(224, 196, 196); */
+  }
+  header h1 {
+    font-size: 1.8rem;
+    left: 4rem;
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 23rem;
+  }
+  #grace {
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  header h1 {
+    left: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header h1 {
+    left: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header h1 {
+    font-size: 1.4rem;
+    left: 2.8rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+    left: 21rem;
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    /* background-color: rgb(202, 178, 178); */
+  }
+  #grace {
+    /* border: 1px solid black; */
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  body {
+    /* background-color: rgb(185, 161, 161); */
+  }
+  #instruction {
+    width: 18rem;
+    left: 18.2rem;
+    padding-bottom: 10rem;
+  }
+  .btnGit {
+    top: 17rem;
+  }
+  #div1,
+  #div2,
+  #div3,
+  #javascript {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-color: rgb(227, 190, 190);
+  }
+  header h1 {
+    left: 1rem;
   }
 }
